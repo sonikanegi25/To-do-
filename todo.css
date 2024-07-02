@@ -1,0 +1,28 @@
+body{
+	background-color:aqua;
+}
+.container{
+	width:360px;
+	padding:33px;
+	align-items:center;
+	margin-left:33%;
+	background-color:white;
+	margin-top:5%;
+}
+
+input{
+	width:270px;
+	padding:8px;
+	border:2px solid aqua;
+	outline:none;
+	font-size:19px;
+}
+button{
+	width:60px;
+	height:40px;
+	color:red;
+	font-size:19px;
+	border-radius:2px;
+	border:none;
+	outline:none;
+}

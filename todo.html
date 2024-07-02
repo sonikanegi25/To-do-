@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task List</title>
+</head>
+<body>
+    <input id="inp" type="text" placeholder="Enter Task">
+    <button onclick="Add()">Add Task</button>
+    <div class="text">
+        <ul id="taskList"></ul>
+    </div>
+
+    <script>
+        let inputs = document.getElementById("inp");
+        let text = document.querySelector(".text");
+        let taskList = document.getElementById("taskList");
+
+        function Add() {
+            if (inputs.value == "") {
+                alert("Please Enter Task");
+            } else {
+                let newTask = document.createElement("li");
+                newTask.textContent = inputs.value; 
+                taskList.appendChild(newTask); 
+                inputs.value = ""; 
+            }
+        }
+    </script>
+</body>
+</html>
